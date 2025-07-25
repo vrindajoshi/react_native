@@ -1,16 +1,16 @@
 import { StyleSheet, Text, View, Image } from 'react-native'
-import Logo from '../assets/img/logo_light.png'
 import {Link} from 'expo-router'
 import React from 'react'
 
 // themed componenets
 import ThemedView from '../components/ThemedView'
+import ThemedLogo from '../components/ThemedLogo'
 
  // rnfes (shortcut)
 const Home = () => {
   return (
     <ThemedView style={styles.container}>
-      <Image style={styles.img} source={Logo}/>
+      <ThemedLogo style={styles.img}/>
 
       <Text style={styles.title}>The Number One</Text>
       <Text style={{marginTop: 10, marginBottom:30}}>
