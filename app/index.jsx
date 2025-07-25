@@ -3,10 +3,13 @@ import Logo from '../assets/img/logo_light.png'
 import {Link} from 'expo-router'
 import React from 'react'
 
+// themed componenets
+import ThemedView from '../components/ThemedView'
+
  // rnfes (shortcut)
 const Home = () => {
   return (
-    <View style={styles.container}>
+    <ThemedView style={styles.container}>
       <Image style={styles.img} source={Logo}/>
 
       <Text style={styles.title}>The Number One</Text>
@@ -17,7 +20,7 @@ const Home = () => {
       <Link style={styles.link} href='/about'>About Page</Link>
       <Link style={styles.link} href='/contact'>Contact Page</Link>
 
-    </View>
+    </ThemedView>
   )
 }
 
