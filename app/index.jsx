@@ -17,8 +17,8 @@ const Home = () => {
         Reading List App
       </Text>
 
-      <Link style={styles.link} href='/about'>About Page</Link>
-      <Link style={styles.link} href='/contact'>Contact Page</Link>
+      <Link style={styles.link} href='/login'>Login Page</Link>
+      <Link style={styles.link} href='/register'>Register Page</Link>
 
     </ThemedView>
   )
