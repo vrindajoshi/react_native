@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet, Pressable } from 'react-native'
 import { Link } from 'expo-router'
 
 import ThemedView from '../../components/ThemedView'
@@ -13,6 +13,10 @@ const Login = () => {
       <ThemedText title={true} style={styles.title}>
         Login to Your Account
       </ThemedText>
+
+      <Pressable style={(pressed) => [styles.btn,]}>
+
+      </Pressable>
 
       <Spacer height={100} />
       <Link href="/register" replace>
