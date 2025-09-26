@@ -1,5 +1,6 @@
 import { StyleSheet, Pressable } from 'react-native'
 import { Link } from 'expo-router'
+import { Colors } from '../../constants/Colors'
 
 // themed components
 import ThemedView from '../../components/ThemedView'
@@ -15,7 +16,7 @@ const Login = () => {
         Login to Your Account
       </ThemedText>
 
-      <Pressable style={(pressed) => [styles.btn,]}>
+      <Pressable style={(pressed) => [styles.btn, pressed && styles.pressed]}>
 
       </Pressable>
 
@@ -42,4 +43,12 @@ const styles = StyleSheet.create({
     fontSize: 18,
     marginBottom: 30
   },
+  btn: {
+    backgroundColor: Colors.primary,
+    padding: 15,
+    borderRadius: 5,
+  }, 
+  pressed: {
+    opacity: 0.8
+  }
 })
